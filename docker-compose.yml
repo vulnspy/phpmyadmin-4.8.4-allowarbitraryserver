@@ -10,6 +10,8 @@ services:
        MYSQL_PASSWORD: vulnspy
      volumes:
        - ./exp/:/root/exp/
+     ports:
+      - "3306:3306"
   web:
     depends_on:
       - db
