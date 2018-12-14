@@ -1,7 +1,18 @@
 version: '3'
 
 services:
+  db:
+     image: mysql:5.7
+     environment:
+       MYSQL_ROOT_PASSWORD: toor
+       MYSQL_DATABASE: vulnspy
+       MYSQL_USER: vulnspy
+       MYSQL_PASSWORD: vulnspy
+     volumes:
+       - ./exp/:/root/exp/
   web:
+    depends_on:
+      - db
     image: vsplate/deb_apache2_php7_mysql5:latest
     volumes:
       - ./html/:/var/www/html/

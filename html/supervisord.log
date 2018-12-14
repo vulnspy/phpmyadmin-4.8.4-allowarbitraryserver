@@ -4,3 +4,17 @@
 2018-12-13 05:42:13,700 INFO spawned: 'apache2' with pid 10
 2018-12-13 05:42:15,010 INFO success: mysqld entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2018-12-13 05:42:15,010 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-12-13 16:11:34,279 WARN received SIGTERM indicating exit request
+2018-12-13 16:11:34,291 INFO waiting for mysqld, apache2 to die
+2018-12-13 16:11:35,296 INFO stopped: apache2 (terminated by SIGTERM)
+2018-12-13 16:11:35,388 INFO stopped: mysqld (exit status 0)
+2018-12-14 14:52:07,476 CRIT Supervisor running as root (no user in config file)
+2018-12-14 14:52:07,479 INFO supervisord started with pid 1
+2018-12-14 14:52:08,484 INFO spawned: 'mysqld' with pid 9
+2018-12-14 14:52:08,489 INFO spawned: 'apache2' with pid 10
+2018-12-14 14:52:09,846 INFO success: mysqld entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-12-14 14:52:09,847 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-12-14 14:52:16,239 WARN received SIGTERM indicating exit request
+2018-12-14 14:52:16,239 INFO waiting for mysqld, apache2 to die
+2018-12-14 14:52:17,243 INFO stopped: apache2 (terminated by SIGTERM)
+2018-12-14 14:52:17,261 INFO stopped: mysqld (exit status 0)
