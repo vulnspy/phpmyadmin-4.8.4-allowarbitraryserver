@@ -1,6 +1,14 @@
 version: '3'
 
 services:
+  web:
+    depends_on:
+      - db
+    image: vsplate/deb_apache2_php7_mysql5:latest
+    volumes:
+      - ./html/:/var/www/html/
+    ports:
+      - "80:80"
   db:
      image: mysql:5.7
      environment:
@@ -12,11 +20,3 @@ services:
        - ./exp/:/root/exp/
      ports:
       - "3306:3306"
-  web:
-    depends_on:
-      - db
-    image: vsplate/deb_apache2_php7_mysql5:latest
-    volumes:
-      - ./html/:/var/www/html/
-    ports:
-      - "80:80"
