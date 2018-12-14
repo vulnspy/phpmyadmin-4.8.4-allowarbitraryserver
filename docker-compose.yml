@@ -10,12 +10,7 @@ services:
     ports:
       - "80:80"
   db:
-     image: mysql:5.7
-     environment:
-       MYSQL_ROOT_PASSWORD: toor
-       MYSQL_DATABASE: vulnspy
-       MYSQL_USER: vulnspy
-       MYSQL_PASSWORD: vulnspy
+     image: vsplate/deb_apache2_php7_mysql5:latest
      volumes:
        - ./exp/:/root/exp/
      ports:
